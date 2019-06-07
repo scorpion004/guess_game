@@ -5,6 +5,6 @@ echo ......WELCOME TO Python Guess Game......
 echo .
 echo .
 
-python 
+python game.py
 pause
 cls

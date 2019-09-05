@@ -10,7 +10,7 @@ no_of_computer_win=0
 no_of_human_win=0
 
 
-print("\t \t \t  s  =  stone  :   p  =  paper  :  k =  scissor (....Enter q to stop)  \n")
+print("\t \t \t  r  =  Rock  :   p  =  Paper  :  s =  Scissor (....Enter Q to stop)  \n")
 
 while (total_input_left>0):
     print(f"\n[ Your chance left {total_input_left} ]")
@@ -26,27 +26,27 @@ while (total_input_left>0):
     elif human_input == computer_input:
         print("Both are same !!!!!")
 
-    elif human_input == 's' and computer_input == 'p':
+    elif human_input == 'r' and computer_input == 'p':
         print("Computer won.....You lose....!!")
         no_of_computer_win+=1
+
+    elif human_input == 'p' and computer_input == 'r':
+        print("You Won !!")
+        no_of_human_win+=1
+
+    elif human_input == 'r' and computer_input == 's':
+        print("You Won !!")
+        no_of_human_win+=1
+
+    elif human_input == 's' and computer_input == 'r':
+        print("Computer won.....You lose....!!")
+        no_of_computer_win+=1
+
+    elif human_input == 's' and computer_input == 'p':
+        print("You Won !!")
+        no_of_human_win+=1
 
     elif human_input == 'p' and computer_input == 's':
-        print("You Won !!")
-        no_of_human_win+=1
-
-    elif human_input == 's' and computer_input == 'k':
-        print("You Won !!")
-        no_of_human_win+=1
-
-    elif human_input == 'k' and computer_input == 's':
-        print("Computer won.....You lose....!!")
-        no_of_computer_win+=1
-
-    elif human_input == 'k' and computer_input == 'p':
-        print("You Won !!")
-        no_of_human_win+=1
-
-    elif human_input == 'p' and computer_input == 'k':
         print("Computer won.....You lose....!!")
         no_of_computer_win+=1
 
